@@ -5,59 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khushi Srinivas | Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
     color: #333;
 }
 
 /* HERO SECTION */
 .hero {
-    position: relative;
     text-align: center;
     padding: 60px 20px;
-    background: #ffffff;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
 }
 
 .hero img {
-    width: 180px;
+    width: 160px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    margin: 10px 0;
 }
 
 .quote {
     font-style: italic;
-    color: #555;
-    max-width: 600px;
-    margin: auto;
+    margin-top: 15px;
+    opacity: 0.9;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
-    padding: 40px 20px;
     max-width: 900px;
-    margin: auto;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 h2 {
-    color: #2c3e50;
+    color: #444;
 }
 
+/* CARDS */
 .card {
     background: white;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #2c3e50;
+    background: #333;
     color: white;
 }
 </style>
@@ -67,9 +79,11 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-    <img src="your-photo.jpg" alt="Khushi">
+    <!-- YOUR PHOTO EMBEDDED -->
+    <img src="data:image/jpeg;base64,PUT_YOUR_IMAGE_BASE64_HERE" alt="Khushi">
+
     <h1>Khushi Srinivas</h1>
-    <p>Data Analyst | Data Engineer | Turning Data into Insights</p>
+    <p>Data Analyst | Data Engineer</p>
 
     <p class="quote">
     "Without data, you're just another person with an opinion." — W. Edwards Deming
@@ -80,10 +94,8 @@ footer {
 <div class="section">
     <h2>About Me</h2>
     <div class="card">
-        <p>
-        I am a Master's student in Information Technology and Management at UT Dallas with a strong passion for data analytics and data engineering. 
-        I enjoy transforming raw data into meaningful insights that support decision-making and improve business outcomes.
-        </p>
+        I’m a Master's student at UT Dallas passionate about data analytics and data engineering. 
+        I enjoy turning complex data into simple insights that help businesses make smarter decisions.
     </div>
 </div>
 
@@ -94,16 +106,16 @@ footer {
     <div class="card">
         <h3>Data Analyst Intern – DFW International Airport</h3>
         <p>
-        Worked on airport infrastructure data by cleaning and transforming large datasets using Python, SQL, and Power Query. 
-        Built structured datasets for reporting and KPI tracking, enabling better operational insights and asset management.
+        Worked with large infrastructure datasets, cleaning and transforming data using Python, SQL, and Power Query. 
+        Built reliable datasets for KPI tracking and operational insights.
         </p>
     </div>
 
     <div class="card">
         <h3>Software Engineer – CGI Inc</h3>
         <p>
-        Processed large-scale energy datasets using Python and SQL, improving data reliability and reporting efficiency. 
-        Optimized queries and data models, reducing processing time and enhancing analytics performance for business teams.
+        Processed high-volume energy data and improved performance using optimized SQL and data models. 
+        Enhanced reporting speed and ensured high-quality data for business analysis.
         </p>
     </div>
 </div>
@@ -115,16 +127,16 @@ footer {
     <div class="card">
         <h3>Flight Data Analysis</h3>
         <p>
-        Analyzed over 1 million flight records to identify delays, cancellations, and route efficiency trends. 
-        Built automated reporting pipelines that significantly reduced manual effort and improved airline performance analysis.
+        Analyzed over a million flight records to identify delays and trends. 
+        Automated reporting pipelines to improve efficiency and decision-making.
         </p>
     </div>
 
     <div class="card">
-        <h3>Energy Data Analytics (Shell Client)</h3>
+        <h3>Energy Data Analytics</h3>
         <p>
-        Worked on European energy datasets to analyze pricing and consumption patterns. 
-        Developed structured datasets and validation pipelines to ensure accurate financial reporting and decision-making.
+        Built structured datasets from energy market data to support pricing and consumption analysis. 
+        Ensured accuracy through validation and quality checks.
         </p>
     </div>
 </div>
